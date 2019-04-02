@@ -1,0 +1,703 @@
+/*******************FUENTES QUE VAMOS A USAR*********************/
+
+/*FUENTE PARA NOMBRE DE LA EMPRESA*/
+@font-face {
+    font-family: FuenteNombreEmpresa;
+    src: url(./Fuentes/Righteous/Righteous-Regular.ttf);
+}
+
+/*FUENTE PRINCIPAL*/
+@font-face {
+    font-family: Principal;
+    src: url(./Fuentes/Slabo/Slabo27px-Regular.ttf);
+}
+
+/*FUENTE PARA SLOGAN Y BOTONES*/
+@font-face {
+    font-family: FuenteSloganYBotones;
+    src: url(./Fuentes/Ranga/Ranga-Regular.ttf);
+}
+
+/*FUENTE PARA ENLACES*/
+@font-face {
+    font-family: FuenteEnlaces;
+    src: url(./Fuentes/Yantramanav/Yantramanav-Medium.ttf);
+}
+
+/*FUENTE PARA OTROS TEXTOS*/
+@font-face {
+    font-family: FuenteAux;
+    src: url(./Fuentes/Abhaya_Libre/AbhayaLibre-Regular.ttf);
+}
+
+/*******************ESTILOS COMUNES A TODAS LAS PAGINAS Y DIMENSIONES*********************/
+/*fuente para todo el body*/
+body{
+	font-family: FuenteAux;
+}
+
+/*ESTILO PARA LA CABECERA DONDE VA AL TITULO, LOGO Y BOTONES*/
+#cabecera{
+	height: 200px;
+	margin-bottom: 1%;
+
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+	
+	background-image: linear-gradient(rgba(27, 169, 175, 1) , rgba(95, 255, 221, 1));
+	border: 1px solid #519E73;
+}
+
+/*ESTILO DE LA IMAGEN DEL LOGO DE LA CABECERA*/
+#logo{
+	width: 40%;
+	float: left;
+}
+
+/*ESTILO PARA LAS IMAGENES DE BANDERAS DE LA CABECERA*/
+#bandera{
+	width: 25px;
+	float: right;
+	padding-right: 3px;
+}
+
+/*ESTILO PARA EL DIV DONDE VAN EL LOGO Y NOMBRE DE LA EMPRESA*/
+#nombreEmpresa{
+	margin-top: 1em;
+	margin-left: 1em;
+	width: 18em;
+	box-sizing: border-box;
+	float: left;
+}
+
+/*ESTILO DE LAS LETRAS CON EL NOMBRE DE LA EMPRESA DE LA CABECERA*/
+#nombreEmpresa span{
+	
+	font-size: 35px;
+	font-family:FuenteNombreEmpresa; 
+	
+}
+/*ESTILO DEL DIV DONDE VAN LOS BOTONES DE NAVEGACION*/
+#botones{	
+	box-sizing: border-box;
+	float: left;
+}
+
+/*ESTILO DEL CONTENEDOR DE LOS BOTONES DE NAVEGACION (ESTA DENTRO DE "BOTONES")*/
+#contenedorBotones{
+	float: right;
+}
+
+/*ESTILO DE LOS BOTONES DE NAVEGACION*/
+button.botonNav{
+	height: 2.5em;
+	width: 5em;
+	background-image: linear-gradient(rgba(95, 255, 221, 1), rgba(255, 244, 202, 1) );
+	float: left;
+	border: 3px solid #1F618D;
+	margin: 0.5em;
+	text-align: center;
+
+	border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	
+	-webkit-box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);
+	-moz-box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);
+	box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);	
+	
+	font-family: FuenteSloganYBotones;
+	font-size:20px;
+}
+
+/*CAMBIO AL PASAR POR ENCIMA DE LOS BOTONES*/
+button.botonNav:hover{
+	background-image: linear-gradient(#FFF4CA, #FF8884 );
+	color: black;
+	cursor: pointer;
+}
+
+/*ESTILO DEL FOOTER CON LA INFORMACION DE CONTACTO*/
+#footerContacto{
+	clear: left;
+	width: 100%;
+	height: 130px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-image: linear-gradient(rgba(27, 169, 175, 1) , rgba(95, 255, 221, 1));
+	border: 1px solid #519E73;
+	font-family: FuenteSloganYBotones;
+}
+
+/*ESTILO PARA LA IMAGEN CON LAS REDES SOCIALES*/
+#redes{
+	height: 2.5em;
+}
+
+/*ESTILO DEL DIV QUE CONTIENE EL H1 Y LA IMAGEN CON LAS REDES*/
+#centrado{
+	width: 40%;
+	float: left;
+	text-align: center;
+	}
+
+/*ESTILO DEL DIV QUE CONTIENE EL CORREO DE CONTACTO*/
+#correo{
+	width: 30%;
+	height: 60%;
+	float: left;
+	text-align: center;	
+	padding-top: 2em;
+	font-size: 25px;
+}
+
+/*ESTILO DEL DIV QUE CONTIENE EL TELEFONO DE CONTACTO*/
+#tlf{
+	width: 30%;
+	height: 60%;
+	float: left;
+	text-align: center;	
+	padding-top: 2em;
+	font-size: 25px;
+}
+
+/*ESTILO DEL FOOTER CON LA INFORMACION LEGAL*/
+#footerLegal{
+	clear: left;
+	width: 100%;
+	height: 60px;
+	margin-top: 1%;
+	background-color: black;
+	color: white;
+	font-family: FuenteAux;
+}
+
+/*ESTILOS DE LOS DIVS QUE CONTENDRAN LOS ENLACES A LA INFORMACION LEGAL*/
+#footerLegal div{
+	margin-top: 1.5%;
+	margin-left: 3.5%;
+	width: 15%;
+	float: left;
+	text-align: center;
+}
+
+
+
+
+/**********************************ESTILOS PROPIOS DEL INDEX********************************/
+
+/*ESTILO PARA EL CUERPO DEl INDEX*/
+#cuerpoIndex{
+	width: 100%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+/*ESTILO DE LA CAJA CON LA INFORMACIÓN PRINCIPAL DEL INDEX*/
+.cajaInformacionIndex{
+	border: 2px solid silver;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 2%;
+	padding: 2%;
+	text-align:justify;
+	display: block; 
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+}
+
+/*ESTILOS PARA LA CAJA DEL SLOGAN DEL INDEX*/
+.cajaInformacionIndex2{
+	border: 2px solid silver;
+	width: 90%;
+	height: 150px;
+	display: block; 
+	margin: 0 auto;
+	margin-top: 2%;
+	padding: 2%;
+	text-align:justify;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+}
+
+.cajaInformacionIndex2 span{
+	font-size: 30px;
+	margin:5px;
+}
+#tituloSlogan{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#sloganFrase{
+	font-family: FuenteSloganYBotones;
+	margin-left: 10%;
+	float: left;
+	
+}
+
+#imagenSloganIndex{
+	width: 10%;
+	float: left;
+	margin-left: 15%;
+}
+
+/**********************************ESTILOS PROPIOS DE DESCARGAS********************************/
+#cuerpoDescargas{
+	width: 100%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+/*IMAGEN DE LA PAGINA DE DESCARGAS*/
+#imagen{
+	width: 20%;
+	float: left;
+	margin-left: 15%;
+	margin-right: 10%;
+}
+
+/*DIV CON LAS INSTRUCCIONES DE DESCARGA*/
+#cajaInstrucciones {
+	width: 40%;
+	float: left;
+	min-width: 370px;
+	border: 2px solid silver;
+	padding: 3%;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+}
+
+/*DIV CON LOS BOTONES DE DESCARGA*/
+#descargas{
+	text-align: center;
+	height: 150px;
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid silver;
+	min-width: 500px;
+	clear: both;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+}
+
+/*BOTONES PARA DESCARGAR*/
+#enlace{
+	height: 1.5em;
+	width: 5em;
+	background-image: linear-gradient(#FFF4CA, #FF8884 );
+	color: black;
+	float: left;
+	border: 3px solid #1F618D;
+	margin-left: 16%;
+	text-align: center;
+	padding-top: 0.3em;
+	
+	border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	
+	-webkit-box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);
+	-moz-box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);
+	box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);	
+	
+	font-family: FuenteSloganYBotones;
+	font-size:25px;
+}
+
+/*EFECTO AL PASAR POR ENCIMA DE LOS ENLACES DE DESCARGA*/
+#enlace:hover{
+	height: 1.5em;
+	width: 5em;
+	color: black;
+	cursor: pointer;
+	background-image: linear-gradient(rgba(95, 255, 221, 1), rgba(255, 244, 202, 1) );
+	color: black;
+	float: left;
+	border: 3px solid #1F618D;
+	margin-left: 16%;
+	text-align: center;
+	padding-top: 0.3em;
+	
+	border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	
+	-webkit-box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);
+	-moz-box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);
+	box-shadow: 0px 5px 3px 0px rgba(107,107,107,1);	
+	
+	font-family: FuenteSloganYBotones;
+	font-size:25px;
+}
+/**********************************ESTILOS PROPIOS DE REGISTRO****************************/
+/*DIV QUE CONTIENE EL FORMULARIO DE LOGIN*/
+.cajaLogin{
+	border: 2px solid silver;
+	width: 90%;
+	display: block; 
+	margin: 0 auto;
+	margin-top: 2%;
+	padding: 2%;
+	text-align:justify;
+}
+
+/*DIV QUE CONTIENE EL FORMULARIO DE REGISTRO*/
+.cajaRegistro{
+	border: 2px solid silver;
+	width: 90%;
+	display: block; 
+	margin: 0 auto;
+	margin-top: 2%;
+	padding: 2%;
+	text-align:justify;
+}
+
+/*ESTILOS DE LOS INPUTS*/
+#Login input{
+    margin-block-end: 2em;
+}
+
+#Registro input{
+    margin-block-end: 2em;
+}
+
+#texttype{
+	width:60%;
+	margin-block-end: 2em;
+}
+
+#cuerpo{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#Login{
+	font-family: FuenteAux;
+	min-width: 240px;
+	text-align-last: center;
+	border: 2px solid silver;
+	float: left;
+	height: 450px;
+	width:37%;
+	display: block; 
+	margin: 0 auto;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 2%;
+	text-align:justify;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+}
+#Registro{
+	font-family: FuenteAux;
+	min-width: 240px;
+	text-align-last: center;
+	border: 2px solid silver;
+	float: right;
+	height: 450px;
+	width: 40%;
+	display: block; 
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 2%;
+	text-align:justify;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+	
+}
+/*DIV CON LA INFORMACION PARA EMPRESAS*/
+#Empresas{
+	text-align-last: center;
+	border: 2px solid silver;
+	width:90%;
+	display: block; 
+	margin: 0 auto;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 2%;
+	text-align:justify;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+	
+}
+
+/*TITULOS DEL LOGIN*/
+#h2{
+	font-family: FuenteAux;
+}
+
+#h1{
+	font-family: FuenteAux;
+	font-size: 42px;
+}
+
+
+
+/**********************************ESTILOS PROPIOS DE NOTICIAS****************************/
+
+#regNoticias{
+	height: 620px;
+	float: left;
+	width:18%;
+	border: 2px solid silver;
+	display: block; 
+	margin: 0 auto;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 2%;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+}
+
+#Noticias{
+	float: right;
+	width:70%;
+	
+	
+}
+
+#noticia{
+	height: 148px;
+	border: 2px solid silver;
+	display: block; 
+	margin: 0 auto;
+	margin-right: 2%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+	padding: 2%;
+	text-align:justify;
+	box-shadow: 7px 7px 8px 0px rgba(143,143,143,1);
+	
+}
+
+#cuerpo{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#cuerpo2{
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 655px;
+}
+
+#titulofecha{
+	font-family: FuenteAux;
+	float: left;
+	margin: 1%;
+	text-align:justify;
+	display: block; 
+	
+}
+
+#noticiaimagen{
+	float: right;
+	margin: 1%;
+}
+
+#tituloN{
+	font-family: FuenteAux;
+	float: left;
+	margin: 1%;
+	text-align:justify;
+	display: block; 
+}
+
+#fechaN{
+	float: right;
+	font-family: FuenteAux;
+}
+
+#imagenN{
+	float: right;
+}
+
+#textoN{
+	font-family: FuenteAux;
+	float: left;
+	margin: 1%;
+	text-align:justify;
+	display: block; 
+}
+
+
+#b{
+	font-size: 20px;
+}
+
+#li{
+	font-family: FuenteAux;
+	margin-right: 2%;
+	margin-top: 4%;
+}
+
+/**********************************MEDIAS QUERIES COMUNES A TODAS LAS PAGINAS********************************/
+@media only screen and (max-width: 1365px) {
+	#imagenN{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 810px) {
+	#regNoticias{
+		display: none;
+	}
+	#Noticias{
+	float: right;
+	width:100%;
+	}
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  /* Pantalla hasta 900px como minimo de ancho de pantalla */
+	
+	#cabecera{
+		 height: 180px;
+	}
+		 
+	#botones{		
+		width:60%;
+		float: left;
+		margin-top: 5em;		
+	}
+
+	#idiomas {
+		margin-top: 3px;
+		margin-right:5px;
+		float: right;
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 650px){
+  /* Pantalla de 650px a 900px de ancho */
+	#cabecera{
+		 height: 200px;
+	}
+		 
+	#botones{
+		width:40%;
+		float: left;
+		margin-top: 50px;
+	}
+
+	#idiomas {
+		width:20px;
+		margin-top: 3px;
+		margin-right:5px;
+		float: right;
+		position: relative;
+	}
+
+	#contenedorBotones{
+		width: 240px;
+	}
+
+	/*para el cuerpo de descargas*/
+	
+	#imagen{	
+		float: left;
+		margin-left: 2%;	
+	}
+
+	#cajaInstrucciones {
+		width: 60%;
+		float: left;
+		border: 2px solid silver;
+		padding: 3%;
+	}
+}
+
+@media only screen and (max-width: 650px){
+  /* Pantalla de menos de 650px de ancho */
+	#cabecera{
+		 height: 240px;
+	}
+		 
+	#botones{
+		
+		width:100%;
+		clear: both;
+		margin-top: 20px;
+	}
+
+	#contenedorBotones{
+		width:100%;
+	}
+
+	#idiomas {
+		width:100px;
+		margin-top: 3px;
+		margin-right:5px;
+		float: right;
+		position: relative;
+	}
+
+	button.botonNav{
+		width: 4em;
+		float: left;
+	}
+	
+	#centrado{
+	width: 50%;
+	float: right;
+	text-align: center;
+	}
+
+	#correo{
+		width: 50%;
+		height: 25%;
+		float: left;
+		text-align: center;	
+		padding-top: 0.5em;
+		font-size: 25px;
+	}
+
+	#tlf{
+		width: 50%;
+		height: 25%;
+		clear: left;
+		text-align: center;	
+		padding-top: 0.5em;
+		font-size: 25px;
+	}
+	/*para el cuerpo del index*/
+	#imagenSloganIndex{
+		display: none;
+	}
+
+	/*para el cuerpo de descargas*/
+	#imagen{	
+		display: none;	
+	}
+
+	#cajaInstrucciones {
+		width: 90%;
+		margin: 0 auto;		
+		border: 2px solid silver;
+		padding: 3%;
+	}
+
+	#descargas{
+		text-align: center;
+		height: 150px;
+		width: 90%;
+		margin: 0 auto;
+		border: 2px solid silver;
+		clear: both;
+		min-width: 0px;
+	}
+
+	#enlace{
+		margin-left: 10%;
+		text-align: center;
+		padding-top: 0.3em;
+	}
+	
+	#Login{
+		float: left;
+		width: 95%;
+	}
+	#Registro{
+		float: left;
+		width: 95%;
+	}
+}

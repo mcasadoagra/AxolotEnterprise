@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Axolot Enterprise</title>    
+    <meta charset="UTF-8">
+     <link href="estilos.css" rel="stylesheet" type="text/css"/>
+  </head>  
+  
+  <body>  
+
+  <!-- CABECERA COMUN PARA TODAS LAS PAGINAS -->
+   <div id="cabecera">
+		<div id="nombreEmpresa">
+		<img id="logo" src="./Imagenes/logo.png"/>
+			<span><br>Axolot <br>Enterprise</span><br/>
+	
+		</div>
+		
+		<div id="idiomas">
+			<a href=""><img id="bandera" src="./Imagenes/es.png"/></a>
+			<a href=""><img id="bandera" src="./Imagenes/uk.png"/></a>
+		</div>
+		
+		
+		<div id="botones">
+			<div id="contenedorBotones">
+				<a href="./Index.html" >
+					<button class="botonNav">
+						Inicio	
+					</button>
+				</a>
+				<a href="./descargas.html" >
+					<button class="botonNav">
+						Descargas
+					</button>
+				</a>
+				<a href="./noticias.html" >
+					<button class="botonNav">
+						Noticias			
+					</button >
+				</a>
+				<a href="./registro.html" >
+					<button class="botonNav">
+						Registro	
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- CUERPO DEL REGISTRO -->
+    <div id="cuerpo">
+		
+			<div id="Login">
+				<h2 id="h2" >LogIn</h2>
+				<input type="text" id="texttype" placeholder="Nombre" name="nombre" size="15"><br>
+				<input type="password"  id="texttype" placeholder="Contraseña" name="contraseña" size="15"><br>
+				<input type="checkbox" name="mantener"> Mantener sesion abierta<br>
+				<input type="submit" value="Aceptar">
+				<input type="submit" value="Cancelar">
+			</div>
+			
+			<div id="Registro">
+				<h2 id="h2" >Registro</h2>
+				<input type="text" id="texttype"  placeholder="Nombre" name="nombre" size="15"><br>
+				<input type="text" id="texttype"  placeholder="Apellido" name="apellido" size="15"><br>
+				<input type="password" id="texttype"  placeholder="Contraseña" name="contraseña" size="15"><br>
+				<input id="date" type="date" placeholder="Fecha de nacimiento"><br>
+				<input type="radio" name="gender" value="male"> Hombre
+				<input type="radio" name="gender" value="female"> Mujer
+				<input type="radio" name="gender" value="other"> Otros<br>
+				<input list="browsers" name="browser" placeholder="Pais" id="texttype">
+					<datalist id="browsers">
+						<option value="España">
+						<option value="Francia">
+						<option value="Alemania">
+						<option value="Italia">
+						<option value="Belgica">
+					</datalist><br>
+				<input list="browsers2" name="browser2" placeholder="Tipo de usuario" id="texttype">
+					<datalist id="browsers2">
+						<option value="Inexperto">
+						<option value="Principiantes">
+						<option value="Habilitados">
+						<option value="Expertos">
+					</datalist><br>
+				<input type="submit" value="Aceptar">
+				<input type="submit" value="Cancelar">
+			</div>
+			
+			<div style="clear:both; height:30px;"></div>
+			
+			<div id="Empresas">
+				<h2 id="h2" >Eres una Empresa?</h2><br>
+				<a href=""><h1 id="h1" >+Información</h1></a>
+			</div>
+			
+			
+	</div>
+    
+	<!-- FOOTER CON LA INFORMACION DE CONTACTO COMUN EN TODAS LAS PAGINAS -->
+    <div id="footerContacto">
+	
+	<div id="correo">contacto@axolotent.com</div>
+	
+	<div id="centrado">
+		<h2>¡Contacta con nosotros!</h2>
+		<img id="redes" src="./Imagenes/redesSociales.png">
+	</div>
+				
+	<div id="tlf">913698751</div>
+		
+	</div>
+	
+	<!-- FOOTER CON EL AVISO LEGAL COMUN EN TODAS LAS PAGINAS -->
+	 <div id="footerLegal">
+		
+			<div>Aviso legal</div>
+			<div>Politica de privacidad</div>
+			<div>Mapa web</div>
+			<div>Política de cookies</div>
+			<div>@2018 Axolot Enterprise</div>
+	
+    </div>
+  </body>  
+</html>
